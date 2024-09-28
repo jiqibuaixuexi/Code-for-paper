@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AS Predictor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pbPredict">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>710</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>predict</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbModelArchitecture">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>710</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>选择模型架构</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbShowImg">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>50</y>
+      <width>611</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Please upload a picture, preferably in the format of .jpg .jpeg *.png.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbSelectImg">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>610</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbModelArchitecture">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>690</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>model</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbModelWeight">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>760</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbModelWeight">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>740</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>checkpoint</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbShowPredict">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>551</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Please click the predict button</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbGradCAM">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>710</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show GradCAM</string>
+    </property>
+   </widget>
+   <zorder>lbShowImg</zorder>
+   <zorder>pbPredict</zorder>
+   <zorder>cbModelArchitecture</zorder>
+   <zorder>pbSelectImg</zorder>
+   <zorder>lbModelArchitecture</zorder>
+   <zorder>cbModelWeight</zorder>
+   <zorder>lbModelWeight</zorder>
+   <zorder>lbShowPredict</zorder>
+   <zorder>pbGradCAM</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>805</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
